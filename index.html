@@ -95,9 +95,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>June 2015 - present</h5>
             <h6><i class="fa fa-map-marker w3-margin-right burak-text-color"></i><b>Koç University ParCoreLab</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
-              <li>Working on a project called TiDA which provides abstractions for better computing performance with data locality and parallelism.</li>
-              <li>Worked on design and implementation of TiDA C++ API, TiDA-acc which is GPU accelerated TiDA and TiDA-acc implementation of SMC which is a combustion simulation.</li>
-              <li>Working on design and implementation of TiDA-multigpu which is a multi-process multi-GPU runtime.</li>
+              <li>Worked on implementation of TiDA, tiling based multi-threaded programming model for increasing cache performance with data locality and managing parallelism. TiDA achieves up to 2.10x speedup over OpenMP for simple kernels and resulted in publication at ISC’16.</li>
+              <li>Designed and implemented TiDA-acc. TiDA-acc is a tiling based asynchronous GPU programming model which hides transfer latency between CPU and GPU, handles cases where there is no sufficient GPU memory, abstracts GPU programming requirements, and published at ICPP’17.</li>
+              <li>Implemented SMC, a combustion simulation consisting of approximately 10,000 lines of code, with TiDA-acc and presented an article as well as a poster about the study at BAŞARIM’17.</li>
+              <li>Currently developing tiling based asynchronous multi-process multi-GPU execution model.</li>
             </ul>
             <hr>
           </div>
@@ -106,7 +107,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>Sept 2016 - present</h5>
             <h6><i class="fa fa-map-marker w3-margin-right burak-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
-              <li>Involved with teaching, supervision and assessment in Computer Architecture, Operating Systems and Parallel Programming courses.</li>
+              <li>Assisted in teaching, supervision and assessment of Computer Architecture, Operating Systems and Parallel Programming courses.</li>
               <li>Received Teaching Assistant Training Certificate.</li>
             </ul>
             <hr>
@@ -116,8 +117,9 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>July - Sept 2016</h5>
             <h6><i class="fa fa-map-marker w3-margin-right burak-text-color"></i><b>Lawrence Berkeley National Laboratory</b>, Berkey, CA, US</h6>
             <ul style="list-style-type: square">
-              <li>Worked on GPU execution models and collaborated with Berkeley Lab on GPU acceleration of TiDA.</li>
-              <li>Worked on GPU acceleration of SMC implemented with BoxLib.</li>
+              <li>Studied and analyzed existing GPU execution models.</li>
+              <li>Worked on GPU acceleration of SMC implemented with BoxLib, an Adaptive Mesh Refinement (AMR) framework from Berkeley Lab.</li>
+              <li>Collaborated on TiDA-acc design.</li>
             </ul>
             <hr>
           </div>
@@ -126,7 +128,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>Aug 2015</h5>
             <h6><i class="fa fa-map-marker w3-margin-right burak-text-color"></i><b>Vestel Research and Development</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
-              <li>Worked on mobile software development for Android.</li>
+              <li>Implemented three proof of concept applications for Android platform.</li>
             </ul>
             <hr>
           </div>
@@ -135,8 +137,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>June - Aug 2014</h5>
             <h6><i class="fa fa-map-marker w3-margin-right burak-text-color"></i><b>Netaş Telecommunication</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
-              <li>Worked on Continuous Delivery (CD) which allows software to be released any time.</li>
-              <li>Worked on integration of static code analysis tools such as PMD, FindBugs and Checkstyle to CD.</li>
+              <li>Worked on integration ofstatic code analysis toolssuch as PMD, FindBugs and Checkstyle to continuous delivery project.</li>
             </ul>
             <br>
           </div>
@@ -199,8 +200,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>Sept 2017</h5>
                 <ul style="list-style-type: square">
                   <li>BAŞARIM is National High Performance Computing Conference of Turkey.</li>
-                  <li>Presented a paper and a poster about <a href="#experience">TiDA-acc and SMC.</a></li>
-                  <li>Volunteered on organizing and running the conference.</li>
+                  <li>Presented the <a href="#experience">BAŞARIM paper and a poster</a>.</li>
+                  <li>Volunteered in organizing and running the conference.</li>
                   <li>Received Certificate of Attendence.</li>
                 </ul>
                 <hr>
@@ -209,7 +210,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <h5 class="w3-show-inline-block"><b>Presenter, ICPP 2017</b></h5>
                 <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>Aug 2017</h5>
                 <ul style="list-style-type: square">
-                  <li>Presented <a href="#publications">the ICPP paper.</a></li>
+                  <li>Presented <a href="#publications">the ICPP paper</a>.</li>
                   <li>Received Certificate of Attendence.</li>
                 </ul>
                 <hr>
@@ -244,7 +245,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <ul style="list-style-type: square">
                   <li>
                     <p class="w3-show-inline-block">IELTS Academic: 7</p>
-                    <h6 class="w3-right w3-show-inline-block"><i class="fa fa-calendar fa-fw w3-margin-right burak-text-color"></i>Nov 2015</h5>
                   </li>
                   <li>
                     <p class="w3-margin-bottom  w3-show-inline-block">KAPLAN International Certificate of Achievement</p>
@@ -256,17 +256,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <hr>
               </div>
               <div class="w3-container w3-margin-bottom w3-center">
+              <h5 class="w3-tag burak-color">C</h5>
+              <h5 class="w3-tag burak-color">C++</h5>
                 <h5 class="w3-tag burak-color">Java</h5>
-                <h5 class="w3-tag burak-color">C</h5>
-                <h5 class="w3-tag burak-color">C++</h5>
                 <h5 class="w3-tag burak-color">Julia</h5>
-                <h5 class="w3-tag burak-color">C#</h5>
                 <h5 class="w3-tag burak-color">Objective-C</h5>
                 <h5 class="w3-tag burak-color">SQL</h5>
                 <h5 class="w3-tag burak-color">HTML</h5>
                 <h5 class="w3-tag burak-color">PHP</h5>
                 <h5 class="w3-tag burak-color">MATLAB</h5>
-                <h5 class="w3-tag burak-color">Scheme</h5>
                 <h5 class="w3-tag burak-color">Pthreads</h5>
                 <h5 class="w3-tag burak-color">OpenMP</h5>
                 <h5 class="w3-tag burak-color">MPI</h5>
@@ -278,8 +276,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <h5 class="w3-tag burak-color">Linux</h5>
                 <h5 class="w3-tag burak-color">Android</h5>
                 <h5 class="w3-tag burak-color">iOS</h5>
-                <h5 class="w3-tag burak-color">GAMS</h5>
-                <h5 class="w3-tag burak-color">Microsoft Project</h5>
                 <br>
               </div>
             </div>
@@ -293,7 +289,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
 
       <footer class="w3-container w3-margin w3-center w3-small w3-text-grey">
-        <b>&copy; 2017 Burak Bastem</b>
+        <b>&copy; 2018 Burak Bastem</b>
         <br>
         <b>CSS Framework: </b> Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
         <b>Font: </b> &copy; 2011 Google Inc.
