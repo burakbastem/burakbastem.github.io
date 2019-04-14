@@ -43,8 +43,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h1><b>Burak Bastem</b></h1>
           </div>
           <div class="w3-container w3-left-align w3-show-inline-block">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large burak-text-color"></i>Senior Software Developer in <a href="http://www.ykteknoloji.com.tr/en/#aboutus" target="_blank">R&D team</a> at <a href="https://www.yapikredi.com.tr/en/investor-relations/about-yapi-kredi/" target="_blank">Yapı Kredi</a></p>
-            <p><i class="fa fa-fw w3-margin-right w3-large"></i>Research Assistant in <a href="https://parcorelab.ku.edu.tr/" target="_blank">ParCoreLab</a> at <a href="https://www.ku.edu.tr/en/" target="_blank">Koç University</a></p>
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large burak-text-color"></i>Senior Software Developer <br><i class="fa fa-fw w3-margin-right"></i> in <a href="http://www.ykteknoloji.com.tr/en/#aboutus" target="_blank">R&D division</a> of <a href="https://www.yapikredi.com.tr/en/investor-relations/about-yapi-kredi/" target="_blank">Yapı Kredi</a></p>
             <p><a href="mailto:burakbastem@hotmail.com"><i class="fa fa-envelope fa-fw w3-margin-right burak-text-color"></i>burakbastem@hotmail.com</a></p>
             <p><a href="https://www.linkedin.com/in/burakbastem/" target="_blank"><i class="fab fa-linkedin fa-fw w3-margin-right w3-large burak-text-color"></i>burakbastem</a></p>
             <p><a href="https://github.com/burakbastem/" target="_blank"><i class="fab fa-github fa-fw w3-margin-right w3-large burak-text-color"></i>burakbastem</a></p>
@@ -61,9 +60,13 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <h2 class="w3-padding-16 burak-text-color"><i class="fa fa-university fa-fw w3-margin-right"></i>Education</h2>
           <div class="w3-container">
             <h5 class="w3-show-inline-block"><b>Master of Science, Computer Science and Engineering</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>2016 - present</h5>
+            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>2016 - 2019</h5>
             <h6><i class="fas fa-map-marker-alt w3-margin-right burak-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <p>GPA: 3.88 / 4.00</p>
+            <p>
+              <a href="thesis-defense-with-my-advisor-didem-unat.jpeg" target="_blank">Thesis:</a> Tiling-Based Programming Model for GPU Clusters Targeting Structured Grids
+              <br>
+              GPA: 3.88 / 4.00
+            </p>
             <hr>
           </div>
           <div class="w3-container">
@@ -96,19 +99,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>July 2018 - present</h5>
             <h6><i class="fas fa-map-marker-alt w3-margin-right burak-text-color"></i><b>Yapı Kredi</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
-              <li>Developing supervised and semi-supervised state-of-the-art machine learning models for credit card fraud detection in R&D division of the bank.</li>
+              <li>Developing state-of-the-art machine learning models for credit card fraud detection in R&D division.</li>
             </ul>
             <hr>
           </div>
           <div class="w3-container">
             <h5 class="w3-show-inline-block"><b>Research Assistant</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>June 2015 - present</h5>
+            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>June 2015 - April 2019</h5>
             <h6><i class="fas fa-map-marker-alt w3-margin-right burak-text-color"></i><b>Koç University ParCoreLab</b>, İstanbul, Turkey</h6>
             <ul style="list-style-type: square">
               <li>Implemented TiDA-C++, tiling based multi-threaded programming model to increase cache performance with data locality and manage parallelism. TiDA achieves up to 2.10x speedup over OpenMP and resulted in publication at ISC’16.</li>
-              <li>Designed and implemented TiDA-acc. TiDA-acc is a tiling based asynchronous GPU programming model which successfully hides transfer latency between CPU and GPU, handles cases where there is no sufficient GPU memory, abstracts GPU programming requirements and is published at ICPP’17.</li>
-              <li>Integrated TiDA-acc to SMC, a combustion simulation consisting of approximately 10,000 lines of code, and presented an article as well as a poster about the study at BAŞARIM’17.</li>
-              <li>Currently developing tiling based high-level asynchronous programming model for GPU clusters.</li>
+              <li>Designed and developed TiDA-acc. TiDA-acc is a tiling-based GPU programming model which manages distinct address spaces, successfully hides transfer latency between CPU and GPU, automatically generates GPU code, handles cases where there is no sufficient GPU memory and is published at ICPP’17.</li>
+              <li>Integrated TiDA-acc to SMC, a combustion simulation consisting of approximately 10,000 lines of code, and presented an article as well as a poster about the study at BAŞARIM’17, Turkey’s national HPC conference.</li>
+              <li>Developed a tiling-based high-level asynchronous programming model for GPU clusters using TiDA-acc. On top of what TiDA-acc offers, it utilizes all GPUs (and CPUs) in a system, overlaps any type of communication with computation and achieves good speedup. An article about the study is under review for publication.</li>
             </ul>
             <hr>
           </div>
@@ -127,7 +130,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
             <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>July - Sept 2016</h5>
             <h6><i class="fas fa-map-marker-alt w3-margin-right burak-text-color"></i><b>Lawrence Berkeley National Laboratory</b>, Berkey, CA, US</h6>
             <ul style="list-style-type: square">
-              <li>Studied existing GPU execution models and SMC implemented with BoxLib, an AMR framework from Berkeley Lab.</li>
+              <li>Studied existing GPU execution models and SMC implemented with AMReX, an AMR framework from Berkeley Lab.</li>
               <li>Implemented GPU version of SMC kernels.</li>
               <li>Collaborated on TiDA-acc design.</li>
             </ul>
@@ -156,6 +159,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div id="publications" class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
           <h2 style="padding-top:16px" class="burak-text-color"><i class="fa fa-file fa-fw w3-margin-right"></i>Publications</h2>
           <h4 style="padding-bottom:16px">Conference Proceedings</h4>
+          <div class="w3-container">
+            <h5>Burak Bastem, Didem Unat, <b>“Tiling-Based Programming Model for Structured Grids on GPU Clusters”</b>, under review</h5>
+              <hr>
+            </div>
           <div class="w3-container">
             <h5>Burak Bastem, Didem Unat, Weiqun Zhang, Ann Almgren, John Shalf, <b><a href="http://ieeexplore.ieee.org/document/8025291/" target="_blank">“Overlapping Data Transfers with
               Computation on GPU with Tiles”</a></b>, International Conference on Parallel Processing (ICPP), Bristol, United Kingdom, August 2017</h5>
@@ -209,8 +216,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
                 <h5 class="w3-show-inline-block"><b>Presenter and Volunteer, BAŞARIM 2017</b></h5>
                 <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right burak-text-color"></i>Sept 2017</h5>
                 <ul style="list-style-type: square">
-                  <li>BAŞARIM is National High Performance Computing Conference of Turkey.</li>
-                  <li>Presented the <a href="#experience">BAŞARIM paper and a poster</a>.</li>
+                  <li>BAŞARIM is Turkey's National High Performance Computing Conference.</li>
+                  <li>Presented the <a href="#experience">BAŞARIM paper and poster</a>.</li>
                   <li>Volunteered in organizing and running the conference.</li>
                   <li>Received Certificate of Attendence.</li>
                 </ul>
@@ -303,7 +310,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
       </div>
 
       <footer class="w3-container w3-margin w3-center w3-small w3-text-grey">
-        <b>&copy; 2018 Burak Bastem</b>
+        <b>&copy; 2017 - 2019 Burak Bastem</b>
         <br>
         <b>CSS Framework: </b> Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
         <b>Font: </b> &copy; 2011 Google Inc.
