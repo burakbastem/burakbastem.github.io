@@ -1,396 +1,428 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <title>Burak Bastem - Personal Website</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSS Framework: Powered by w3.css - https://www.w3schools.com/w3css/default.asp -->
-  <link rel="stylesheet" href="customized-w3.css">
-  <!-- Font: Copyright 2011 Google Inc. All Rights Reserved. - https://fonts.google.com/specimen/Roboto -->
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-  <!-- Icons: Font Awesome by Dave Gandy - http://fontawesome.io -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109579126-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-109579126-1');
-  </script>
-</head>
+  <head>
+    <title>Burak Bastem - Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Framework: Powered by w3.css - https://www.w3schools.com/w3css/default.asp -->
+    <link rel="stylesheet" href="customized-w3.css">
+    <!-- Font: Copyright 2011 Google Inc. All Rights Reserved. - https://fonts.google.com/specimen/Roboto -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <!-- Icons: Font Awesome by Dave Gandy - http://fontawesome.io -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  </head>
 
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  </style>
 
-<body class="w3-light-grey">
-  <!-- Page Container -->
-  <div class="custom-content w3-margin-top">
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-      <!-- Left Column -->
-      <div class="w3-third w3-center custom-position-2 w3-margin-bottom">
-        <div class="w3-white w3-text-dark-grey w3-card-4">
-          <div class="">
-            <img src="burak-bastem-photo.jpg" class="custom-image w3-circle w3-margin-top" alt="Burak Bastem">
-            <h1><b>Burak Bastem</b></h1>
-          </div>
-          <div class="w3-container w3-left-align w3-show-inline-block">
-            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large custom-text-color"></i>Expert R&D Engineer<br><i class="fa fa-fw w3-margin-right"></i>at <a href="http://www.ykteknoloji.com.tr/en/#aboutus" target="_blank">Yapı Kredi Teknoloji</a></p>
-            <p><a href="mailto:burakbastem@hotmail.com"><i class="fa fa-envelope fa-fw w3-margin-right custom-text-color"></i>burakbastem@hotmail.com</a></p>
-            <p></p>
-            <p>
-              <a href="Burak-Bastem-Resume.pdf" target="_blank" title="Resume in PDF"><i class="fas fa-file-pdf fa-fw w3-margin-right w3-large custom-text-color"></i></a>
-              <a href="https://www.linkedin.com/in/burakbastem/" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin fa-fw w3-margin-right w3-large custom-text-color"></i></a>
-              <a href="https://scholar.google.com/citations?user=b5V6mWIAAAAJ&hl=en" target="_blank" title="Google Scholar Profile"><img src="icons8-google-scholar.svg" class="w3-margin-right" style="width:22px"></img></a>
-              <a href="https://github.com/burakbastem/" target="_blank" title="GitHub Profile"><i class="fab fa-github fa-fw w3-margin-right w3-large custom-text-color"></i></a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- End of Left Column -->
-      <!-- Right Column -->
-      <div class="w3-twothird">
-        <!-- Navigation Bar -->
-        <div class="w3-container w3-card-4 custom-color w3-margin-bottom custom-position">
-            <nav class="w3-text-white w3-center w3-medium">
-              <a class="w3-btn custom-hide-1 w3-large fa fa-home" href="#"></a>
-              <a class="w3-btn custom-hide-7" href="#experience">Experience</a>
-              <a class="w3-btn custom-hide-7 custom-hide-6" href="#education">Education</a>
-              <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5" href="#publications">Publications</a>
-              <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4" href="#honors-and-awards">Honors and Awards</a>
-              <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4 custom-hide-3" href="#activities">Activities</a>
-              <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4 custom-hide-3 custom-hide-2" href="#skills">Skills</a>
-              <a id="toggle" class="w3-btn custom-hide-0 w3-right" onclick="toggleMenu()" title="Toggle Navigation Menu"><i id="toggle-icon" class="fa fa-bars"></i></a>
-            </nav>
-            <nav id="hidden-nav-bar" class="w3-bar-block custom-color w3-hide w3-center w3-medium">
-              <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4 custom-hide-5 custom-hide-6" href="#experience">Experience</a>
-              <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4 custom-hide-5" href="#education">Education</a>
-              <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4" href="#publications">Publications</a>
-              <a class="w3-btn custom-hide-2 custom-hide-3" href="#honors-and-awards">Honors and Awards</a>
-              <a class="w3-btn custom-hide-2" href="#activities">Activities</a>
-              <a class="w3-btn"href="#skills">Skills</a>
-            </nav>
-        </div>
-        <!-- End of Navigation Bar -->
-        <!-- Bio -->
-        <a id="bio"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-user fa-fw w3-margin-right"></i>Bio</h2>
-          <div class="w3-container">
-            Burak Bastem is a software engineer specialized in high performance computing (HPC) and machine learning (ML). His experience in HPC involved developing GPU and CPU runtime libraries, optimizing multi-process communication and accelerating applications. Since 2018 he has been working on fraud detection, a challenging ML problem due to its highly unbalanced nature.
-            <br>
-            <br>
-          </div>
-        </div>
-        <!-- End of Bio -->
-        <!-- Experience -->
-        <a id="experience"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Experience</h2>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Expert R&D Engineer</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>July 2018 - present</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Yapı Kredi Teknoloji</b>, İstanbul, Turkey</h6>
-            <ul style="list-style-type: square">
-              <li>Developing state-of-the-art machine learning models for credit card and cross-channel fraud detection which are challenging problems due to highly unbalanced data and real-time requirement.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Research Assistant</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>June 2015 - April 2019</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University Parcorelab</b>, İstanbul, Turkey</h6>
-            <ul style="list-style-type: square">
-              <li>Implemented TiDA-C++, tiling based multi-threaded programming model to increase cache performance with data locality and manage parallelism. TiDA achieves up to 2.10x speedup over OpenMP and resulted in publication at ISC’16</li>
-              <li>Designed and developed TiDA-acc. TiDA-acc is a tiling-based GPU programming model which manages distinct address spaces, successfully hides transfer latency between CPU and GPU, automatically generates GPU code, handles cases where there is no sufficient GPU memory and is published at ICPP’17.</li>
-              <li>Integrated TiDA-acc to SMC, a combustion simulation consisting of approximately 10,000 lines of code, and presented an article and a poster about the study at BAŞARIM’17, Turkey’s national HPC conference</li>
-              <li>Developed a tiling-based high-level asynchronous programming model for GPU clusters using TiDA-acc. On top of what TiDA-acc offers, it utilizes all GPUs (and CPUs) in the system, overlaps any type of communication with computation and achieves good speedup. The study is published at HPCAsia’20.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Teaching Assistant</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - July 2018</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <ul style="list-style-type: square">
-              <li>Assisted in teaching, supervision and assessment of Computer Architecture, Operating Systems and Parallel Programming courses.</li>
-              <li>Received Teaching Assistant Training Certificate.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Research Assistant</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>July - Sept 2016</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Lawrence Berkeley National Laboratory</b>, Berkey, CA, US</h6>
-            <ul style="list-style-type: square">
-              <li>Studied existing GPU execution models and SMC implemented with AMReX, an AMR framework from Berkeley Lab.</li>
-              <li>Implemented GPU version of SMC kernels.</li>
-              <li>Collaborated on TiDA-acc design.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Software Engineering Intern</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Aug 2015</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Vestel R&D</b>, İstanbul, Turkey</h6>
-            <ul style="list-style-type: square">
-              <li>Developed proof of concept applications for Android platform.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Software Engineering Intern</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>June - Aug 2014</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Netaş</b>, İstanbul, Turkey</h6>
-            <ul style="list-style-type: square">
-              <li>Analyzed and configured static code analysis tools to be integrated to continuous delivery project.</li>
-            </ul>
-            <br>
-          </div>
-        </div>
-        <!-- End of Experience -->
-        <!-- Education -->
-        <a id="education"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-university fa-fw w3-margin-right"></i>Education</h2>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Master of Science, Computer Science and Engineering</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - Apr 2019</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <p>
-              <a href="thesis-defense-with-my-advisor-didem-unat.jpeg" target="_blank">Thesis:</a> Tiling-Based Programming Model for GPU Clusters Targeting Structured Grids
-              <br>
-              GPA: 3.88 / 4.00
-            </p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Bachelor of Science, Computer Engineering</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2012 - Feb 2016</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <p>GPA: 3.18 / 4.00</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Bachelor of Science, Industrial Engineering</b> - Double Major</h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2015 - June 2016</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <p>GPA: 3.18 / 4.00</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Track Certificate Program, Software Engineering</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2014 - Feb 2016</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <p>GPA: 3.54 / 4.00</p>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>English Language Program</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2010 - Jan 2012</h5>
-            <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
-            <br>
-          </div>
-        </div>
-        <!-- End of Education -->
-        <!-- Publications -->
-        <a id="publications"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 style="padding-top:16px" class="custom-text-color"><i class="fa fa-file fa-fw w3-margin-right"></i>Publications</h2>
-          <h4 style="padding-bottom:16px">Conference Proceedings</h4>
-          <div class="w3-container">
-            <h5>Burak Bastem, Didem Unat, <b><a href="https://dl.acm.org/doi/10.1145/3368474.3368485" target="_blank">“Tiling-Based Programming Model for Structured Grids on GPU Clusters”</a></b>, International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia), Fukuoka, Japan, January 2020</h5>
-              <hr>
+  <body class="w3-light-grey">
+    <!-- Page Container -->
+    <div class="custom-content w3-margin-top">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third w3-center custom-position-2 w3-margin-bottom">
+          <div class="w3-white w3-text-dark-grey w3-card-4">
+            <div class="">
+              <img src="burak-bastem-photo.jpg" class="custom-image w3-circle w3-margin-top" alt="Burak Bastem">
+              <h1><b>Burak Bastem</b></h1>
             </div>
-          <div class="w3-container">
-            <h5>Burak Bastem, Didem Unat, Weiqun Zhang, Ann Almgren, John Shalf, <b><a href="http://ieeexplore.ieee.org/document/8025291/" target="_blank">“Overlapping Data Transfers with
-              Computation on GPU with Tiles”</a></b>, International Conference on Parallel Processing (ICPP), Bristol, United Kingdom, August 2017</h5>
+            <div class="w3-container w3-left-align w3-show-inline-block">
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large custom-text-color"></i>Expert R&D Engineer<br><i class="fa fa-fw w3-margin-right"></i>at <a href="http://www.ykteknoloji.com.tr/en/#aboutus" target="_blank">Yapı Kredi Teknoloji</a></p>
+              <p><a href="mailto:burakbastem@hotmail.com"><i class="fa fa-envelope fa-fw w3-margin-right custom-text-color"></i>burakbastem@hotmail.com</a></p>
+              <p></p>
+              <p>
+                <a href="Burak-Bastem-Resume.pdf" target="_blank" title="Resume in PDF"><i class="fas fa-file-pdf fa-fw w3-margin-right w3-large custom-text-color"></i></a>
+                <a href="https://www.linkedin.com/in/burakbastem/" target="_blank" title="LinkedIn Profile"><i class="fab fa-linkedin fa-fw w3-margin-right w3-large custom-text-color"></i></a>
+                <a href="https://scholar.google.com/citations?user=b5V6mWIAAAAJ&hl=en" target="_blank" title="Google Scholar Profile"><img src="icons8-google-scholar.svg" class="w3-margin-right" style="width:22px"></img></a>
+                <a href="https://github.com/burakbastem/" target="_blank" title="GitHub Profile"><i class="fab fa-github fa-fw w3-margin-right w3-large custom-text-color"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- End of Left Column -->
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <!-- Navigation Bar -->
+          <div class="w3-container w3-card-4 custom-color w3-margin-bottom custom-position">
+              <nav class="w3-text-white w3-center w3-medium">
+                <a class="w3-btn custom-hide-1 w3-large fa fa-home" href="#top"></a>
+                <a class="w3-btn custom-hide-7" href="#experience">Experience</a>
+                <a class="w3-btn custom-hide-7 custom-hide-6" href="#education">Education</a>
+                <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5" href="#publications">Publications</a>
+                <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4" href="#honors-and-awards">Honors and Awards</a>
+                <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4 custom-hide-3" href="#activities">Activities</a>
+                <a class="w3-btn custom-hide-7 custom-hide-6 custom-hide-5 custom-hide-4 custom-hide-3 custom-hide-2" href="#skills">Skills</a>
+                <a id="toggle" class="w3-btn custom-hide-0 w3-right" onclick="toggleMenu()" title="Toggle Navigation Menu"><i id="toggle-icon" class="fa fa-bars"></i></a>
+              </nav>
+              <nav id="hidden-nav-bar" class="w3-bar-block custom-color w3-hide w3-center w3-medium">
+                <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4 custom-hide-5 custom-hide-6" href="#experience">Experience</a>
+                <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4 custom-hide-5" href="#education">Education</a>
+                <a class="w3-btn custom-hide-2 custom-hide-3 custom-hide-4" href="#publications">Publications</a>
+                <a class="w3-btn custom-hide-2 custom-hide-3" href="#honors-and-awards">Honors and Awards</a>
+                <a class="w3-btn custom-hide-2" href="#activities">Activities</a>
+                <a class="w3-btn"href="#skills">Skills</a>
+              </nav>
+          </div>
+          <!-- End of Navigation Bar -->
+          <!-- Bio -->
+          <a id="bio"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-user fa-fw w3-margin-right"></i>Bio</h2>
+            <div class="w3-container">
+              Burak Bastem is a software engineer specialized in high performance computing (HPC) and machine learning (ML). His experience in HPC involved developing GPU and CPU runtime libraries, optimizing multi-process communication and accelerating applications. Since 2018 he has been working on fraud detection, a challenging ML problem due to its highly unbalanced nature.
+              <br>
+              <br>
+            </div>
+          </div>
+          <!-- End of Bio -->
+          <!-- Experience -->
+          <a id="experience"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>Experience</h2>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Expert R&D Engineer</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>July 2018 - present</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Yapı Kredi Teknoloji</b>, İstanbul, Turkey</h6>
+              <ul style="list-style-type: square">
+                <li>Developing state-of-the-art machine learning models for credit card and cross-channel fraud detection which are challenging problems due to highly unbalanced data and real-time requirement.</li>
+              </ul>
               <hr>
             </div>
             <div class="w3-container">
-              <h5>Didem Unat, Tan Nguyen, Weiqun Zhang, Muhammed Nufail Farooqi, Burak Bastem, George Michelogiannakis, Ann Almgren,
-                John Shalf, <b><a href="https://link.springer.com/chapter/10.1007/978-3-319-41321-1_7" target="_blank">“TiDA: High-Level Programming Abstractions for Data Locality Management”</a></b>, International Supercomputing Conference (ISC), Frankfurt,
-                Germany, June 2016</h5>
-                <br>
-              </div>
+              <h5 class="w3-show-inline-block"><b>Research Assistant</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>June 2015 - April 2019</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University Parcorelab</b>, İstanbul, Turkey</h6>
+              <ul style="list-style-type: square">
+                <li>Implemented TiDA-C++, tiling based multi-threaded programming model to increase cache performance with data locality and manage parallelism. TiDA achieves up to 2.10x speedup over OpenMP and resulted in publication at ISC’16</li>
+                <li>Designed and developed TiDA-acc. TiDA-acc is a tiling-based GPU programming model which manages distinct address spaces, successfully hides transfer latency between CPU and GPU, automatically generates GPU code, handles cases where there is no sufficient GPU memory and is published at ICPP’17.</li>
+                <li>Integrated TiDA-acc to SMC, a combustion simulation consisting of approximately 10,000 lines of code, and presented an article and a poster about the study at BAŞARIM’17, Turkey’s national HPC conference</li>
+                <li>Developed a tiling-based high-level asynchronous programming model for GPU clusters using TiDA-acc. On top of what TiDA-acc offers, it utilizes all GPUs (and CPUs) in the system, overlaps any type of communication with computation and achieves good speedup. The study is published at HPCAsia’20.</li>
+              </ul>
+              <hr>
             </div>
-        <!-- Honors and Awards -->
-        <a id="honors-and-awards"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-trophy fa-fw w3-margin-right"></i>Honors and Awards</h2>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Research Project Scholarship Recipient</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - July 2018</h5>
-            <h6>Prof. Didem Unat via TÜBİTAK</h6>
-            <hr>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Teaching Assistant</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - July 2018</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <ul style="list-style-type: square">
+                <li>Assisted in teaching, supervision and assessment of Computer Architecture, Operating Systems and Parallel Programming courses.</li>
+                <li>Received Teaching Assistant Training Certificate.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Research Assistant</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>July - Sept 2016</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Lawrence Berkeley National Laboratory</b>, Berkey, CA, US</h6>
+              <ul style="list-style-type: square">
+                <li>Studied existing GPU execution models and SMC implemented with AMReX, an AMR framework from Berkeley Lab.</li>
+                <li>Implemented GPU version of SMC kernels.</li>
+                <li>Collaborated on TiDA-acc design.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Software Engineering Intern</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Aug 2015</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Vestel R&D</b>, İstanbul, Turkey</h6>
+              <ul style="list-style-type: square">
+                <li>Developed proof of concept applications for Android platform.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Software Engineering Intern</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>June - Aug 2014</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Netaş</b>, İstanbul, Turkey</h6>
+              <ul style="list-style-type: square">
+                <li>Analyzed and configured static code analysis tools to be integrated to continuous delivery project.</li>
+              </ul>
+              <br>
+            </div>
           </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Half Merit Scholarship Recipient</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2016</h5>
-            <h6>Koç University, Istanbul, Turkey</h6>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Second Best Senior Project Award</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2016</h5>
-            <h6>Koç University, Istanbul, Turkey</h6>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Dean's Honor Roll</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Fall 2014, Fall 2015, Spring 2016</h5>
-            <h6>Koç University, Istanbul, Turkey</h6>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Vehbi Koç Scholar</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Spring 2014, Spring 2015</h5>
-            <h6>Koç University, Istanbul, Turkey</h6>
-            <br>
-          </div>
-        </div>
-        <!-- Activities -->
-        <a id="activities"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-certificate fa-fw w3-margin-right"></i>Activities</h2>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Speaker, HPCAsia 2020</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Jan 2020</h5>
-            <ul style="list-style-type: square">
-              <li>Presented the <a href="#experience">HPCAsia paper</a>.</li>
-              <li>Received Certificate of Attendence.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Speaker and Volunteer, BAŞARIM 2017</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2017</h5>
-            <ul style="list-style-type: square">
-              <li>BAŞARIM is Turkey's National High Performance Computing Conference.</li>
-              <li>Presented the <a href="#experience">BAŞARIM paper and poster</a>.</li>
-              <li>Volunteered in organizing and running the conference.</li>
-              <li>Received Certificate of Attendence.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Speaker, ICPP 2017</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Aug 2017</h5>
-            <ul style="list-style-type: square">
-              <li>Presented <a href="#publications">the ICPP paper</a>.</li>
-              <li>Received Certificate of Attendence.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Member, Koç University Computer Club</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2013</h5>
-            <ul style="list-style-type: square">
-              <li>Coordinated and participated in workshops and seminars.</li>
-            </ul>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5 class="w3-show-inline-block"><b>Member, Koç University Marketing Club</b></h5>
-            <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2011</h5>
-            <ul style="list-style-type: square">
-              <li>Participated in seminars and career talks with top executives of reputable companies.</li>
-              <li>Received BusinessPort Certificate of Attendence.</li>
-            </ul>
-            <br>
-          </div>
-        </div>
-        <!-- Skills -->
-        <a id="skills"></a>
-        <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
-          <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-cubes fa-fw w3-margin-right"></i>Skills</h2>
-          <div class="w3-container">
-            <h5><b>Turkish:</b> Native</h5>
-            <hr>
-          </div>
-          <div class="w3-container">
-            <h5><b>English:</b> Fluent</h5>
-            <ul style="list-style-type: square">
-              <li>
-                <p class="w3-show-inline-block">IELTS Academic: 7</p>
-              </li>
-              <li>
-                <p class="w3-margin-bottom  w3-show-inline-block">KAPLAN International Certificate of Achievement</p>
-                <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Summer 2012</h5>
+          <!-- End of Experience -->
+          <!-- Education -->
+          <a id="education"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-university fa-fw w3-margin-right"></i>Education</h2>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Master of Science, Computer Science and Engineering</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - Apr 2019</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <p>
+                <a href="thesis-defense-with-my-advisor-didem-unat.jpeg" target="_blank">Thesis:</a> Tiling-Based Programming Model for GPU Clusters Targeting Structured Grids
                 <br>
-                <i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i>New York City, NY, US
-              </li>
-            </ul>
-            <hr>
+                GPA: 3.88 / 4.00
+              </p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Bachelor of Science, Computer Engineering</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2012 - Feb 2016</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <p>GPA: 3.18 / 4.00</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Bachelor of Science, Industrial Engineering</b> - Double Major</h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2015 - June 2016</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <p>GPA: 3.18 / 4.00</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Track Certificate Program, Software Engineering</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Feb 2014 - Feb 2016</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <p>GPA: 3.54 / 4.00</p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>English Language Program</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2010 - Jan 2012</h5>
+              <h6><i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i><b>Koç University</b>, İstanbul, Turkey</h6>
+              <br>
+            </div>
           </div>
-          <div class="w3-container w3-margin-bottom w3-center">
-            <h5 class="w3-tag custom-color">Python</h5>
-            <h5 class="w3-tag custom-color">C++</h5>
-          <h5 class="w3-tag custom-color">C</h5>
-            <h5 class="w3-tag custom-color">Java</h5>
-            <h5 class="w3-tag custom-color">Julia</h5>
-            <h5 class="w3-tag custom-color">Objective-C</h5>
-            <h5 class="w3-tag custom-color">SQL</h5>
-            <h5 class="w3-tag custom-color">HTML</h5>
-            <h5 class="w3-tag custom-color">CSS</h5>
-            <h5 class="w3-tag custom-color">PHP</h5>
-            <h5 class="w3-tag custom-color">MATLAB</h5>
-            <h5 class="w3-tag custom-color">Scikit-Learn</h5>
-            <h5 class="w3-tag custom-color">Pandas</h5>
-            <h5 class="w3-tag custom-color">Redis</h5>
-            <h5 class="w3-tag custom-color">Keras</h5>
-            <h5 class="w3-tag custom-color">CUDA</h5>
-            <h5 class="w3-tag custom-color">OpenACC</h5>
-            <h5 class="w3-tag custom-color">MPI</h5>
-            <h5 class="w3-tag custom-color">OpenMP</h5>
-            <h5 class="w3-tag custom-color">Pthreads</h5>
-            <h5 class="w3-tag custom-color">Knet</h5>
-            <h5 class="w3-tag custom-color">OpenCV</h5>
-            <h5 class="w3-tag custom-color">OpenGL</h5>
-            <h5 class="w3-tag custom-color">Linux</h5>
-            <h5 class="w3-tag custom-color">iOS</h5>
-            <h5 class="w3-tag custom-color">Android</h5>
-            <br>
+          <!-- End of Education -->
+          <!-- Publications -->
+          <a id="publications"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 style="padding-top:16px" class="custom-text-color"><i class="fa fa-file fa-fw w3-margin-right"></i>Publications</h2>
+            <h4 style="padding-bottom:16px">Conference Proceedings</h4>
+            <div class="w3-container">
+              <h5>Burak Bastem, Didem Unat, <b><a href="https://dl.acm.org/doi/10.1145/3368474.3368485" target="_blank">“Tiling-Based Programming Model for Structured Grids on GPU Clusters”</a></b>, International Conference on High Performance Computing in Asia-Pacific Region (HPCAsia), Fukuoka, Japan, January 2020</h5>
+                <hr>
+              </div>
+            <div class="w3-container">
+              <h5>Burak Bastem, Didem Unat, Weiqun Zhang, Ann Almgren, John Shalf, <b><a href="http://ieeexplore.ieee.org/document/8025291/" target="_blank">“Overlapping Data Transfers with
+                Computation on GPU with Tiles”</a></b>, International Conference on Parallel Processing (ICPP), Bristol, United Kingdom, August 2017</h5>
+                <hr>
+              </div>
+              <div class="w3-container">
+                <h5>Didem Unat, Tan Nguyen, Weiqun Zhang, Muhammed Nufail Farooqi, Burak Bastem, George Michelogiannakis, Ann Almgren,
+                  John Shalf, <b><a href="https://link.springer.com/chapter/10.1007/978-3-319-41321-1_7" target="_blank">“TiDA: High-Level Programming Abstractions for Data Locality Management”</a></b>, International Supercomputing Conference (ISC), Frankfurt,
+                  Germany, June 2016</h5>
+                  <br>
+                </div>
+              </div>
+          <!-- Honors and Awards -->
+          <a id="honors-and-awards"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-trophy fa-fw w3-margin-right"></i>Honors and Awards</h2>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Research Project Scholarship Recipient</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2016 - July 2018</h5>
+              <h6>Prof. Didem Unat via TÜBİTAK</h6>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Half Merit Scholarship Recipient</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2016</h5>
+              <h6>Koç University, Istanbul, Turkey</h6>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Second Best Senior Project Award</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2016</h5>
+              <h6>Koç University, Istanbul, Turkey</h6>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Dean's Honor Roll</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Fall 2014, Fall 2015, Spring 2016</h5>
+              <h6>Koç University, Istanbul, Turkey</h6>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Vehbi Koç Scholar</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Spring 2014, Spring 2015</h5>
+              <h6>Koç University, Istanbul, Turkey</h6>
+              <br>
+            </div>
+          </div>
+          <!-- Activities -->
+          <a id="activities"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-certificate fa-fw w3-margin-right"></i>Activities</h2>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Speaker, HPCAsia 2020</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Jan 2020</h5>
+              <ul style="list-style-type: square">
+                <li>Presented the <a href="#experience">HPCAsia paper</a>.</li>
+                <li>Received Certificate of Attendence.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Speaker and Volunteer, BAŞARIM 2017</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Sept 2017</h5>
+              <ul style="list-style-type: square">
+                <li>BAŞARIM is Turkey's National High Performance Computing Conference.</li>
+                <li>Presented the <a href="#experience">BAŞARIM paper and poster</a>.</li>
+                <li>Volunteered in organizing and running the conference.</li>
+                <li>Received Certificate of Attendence.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Speaker, ICPP 2017</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Aug 2017</h5>
+              <ul style="list-style-type: square">
+                <li>Presented <a href="#publications">the ICPP paper</a>.</li>
+                <li>Received Certificate of Attendence.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Member, Koç University Computer Club</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2013</h5>
+              <ul style="list-style-type: square">
+                <li>Coordinated and participated in workshops and seminars.</li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-show-inline-block"><b>Member, Koç University Marketing Club</b></h5>
+              <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>2010 - 2011</h5>
+              <ul style="list-style-type: square">
+                <li>Participated in seminars and career talks with top executives of reputable companies.</li>
+                <li>Received BusinessPort Certificate of Attendence.</li>
+              </ul>
+              <br>
+            </div>
+          </div>
+          <!-- Skills -->
+          <a id="skills"></a>
+          <div class="w3-container w3-card-4 w3-white w3-text-dark-grey w3-margin-bottom">
+            <h2 class="w3-padding-16 custom-text-color"><i class="fa fa-cubes fa-fw w3-margin-right"></i>Skills</h2>
+            <div class="w3-container">
+              <h5><b>Turkish:</b> Native</h5>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5><b>English:</b> Fluent</h5>
+              <ul style="list-style-type: square">
+                <li>
+                  <p class="w3-show-inline-block">IELTS Academic: 7</p>
+                </li>
+                <li>
+                  <p class="w3-margin-bottom  w3-show-inline-block">KAPLAN International Certificate of Achievement</p>
+                  <h6 class="w3-right w3-show-inline-block"><i class="far fa-calendar fa-fw w3-margin-right custom-text-color"></i>Summer 2012</h5>
+                  <br>
+                  <i class="fas fa-map-marker-alt w3-margin-right custom-text-color"></i>New York City, NY, US
+                </li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container w3-margin-bottom w3-center">
+              <h5 class="w3-tag custom-color">Python</h5>
+              <h5 class="w3-tag custom-color">C++</h5>
+            <h5 class="w3-tag custom-color">C</h5>
+              <h5 class="w3-tag custom-color">Java</h5>
+              <h5 class="w3-tag custom-color">Julia</h5>
+              <h5 class="w3-tag custom-color">Objective-C</h5>
+              <h5 class="w3-tag custom-color">SQL</h5>
+              <h5 class="w3-tag custom-color">HTML</h5>
+              <h5 class="w3-tag custom-color">CSS</h5>
+              <h5 class="w3-tag custom-color">PHP</h5>
+              <h5 class="w3-tag custom-color">MATLAB</h5>
+              <h5 class="w3-tag custom-color">Scikit-Learn</h5>
+              <h5 class="w3-tag custom-color">Pandas</h5>
+              <h5 class="w3-tag custom-color">Redis</h5>
+              <h5 class="w3-tag custom-color">Keras</h5>
+              <h5 class="w3-tag custom-color">CUDA</h5>
+              <h5 class="w3-tag custom-color">OpenACC</h5>
+              <h5 class="w3-tag custom-color">MPI</h5>
+              <h5 class="w3-tag custom-color">OpenMP</h5>
+              <h5 class="w3-tag custom-color">Pthreads</h5>
+              <h5 class="w3-tag custom-color">Knet</h5>
+              <h5 class="w3-tag custom-color">OpenCV</h5>
+              <h5 class="w3-tag custom-color">OpenGL</h5>
+              <h5 class="w3-tag custom-color">Linux</h5>
+              <h5 class="w3-tag custom-color">iOS</h5>
+              <h5 class="w3-tag custom-color">Android</h5>
+              <br>
+            </div>
           </div>
         </div>
+        <!-- End Right Column -->
       </div>
-      <!-- End Right Column -->
+      <!-- End Grid -->
     </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Page Container -->
-  <footer class="w3-container w3-margin w3-center w3-small w3-text-grey">
-    <b>&copy; 2017 - 2020 Burak Bastem</b>
-    <br>
-    <b>CSS Framework: </b> Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-    <b>Font: </b> &copy; 2011 Google Inc.
-    <b>Icons: </b> Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>
-    and
-    <a target="_blank" href="https://icons8.com/icons/set/google-scholar--v2">Google Scholar icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
-  </footer>
+    <!-- End Page Container -->
+    <footer class="w3-container w3-margin w3-center w3-small w3-text-grey">
+      <b>&copy; 2017 - 2020 Burak Bastem</b>
+      <br>
+      <b>CSS Framework: </b> Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+      <b>Font: </b> &copy; 2011 Google Inc.
+      <b>Icons: </b> Font Awesome by Dave Gandy - <a href="http://fontawesome.io" target="_blank">http://fontawesome.io</a>
+      and
+      <a target="_blank" href="https://icons8.com/icons/set/google-scholar--v2">Google Scholar icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </footer>
 
-  <script>
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function toggleMenu() {
-    var x = document.getElementById("hidden-nav-bar");
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else {
-      x.className = x.className.replace(" w3-show", "");
-    }
-  }
-  // Close hidden navigation on any click: https://www.youtube.com/watch?v=DxWqBRqAGLo
-  window.addEventListener("mouseup", function(event){
-    var bar = document.getElementById("hidden-nav-bar");
-    var toggle = document.getElementById("toggle");
-    var toggle_icon = document.getElementById("toggle-icon");
-    if (event.target != toggle && event.target != toggle_icon) {
-      bar.className = bar.className.replace(" w3-show", "");
-    }
-  });
-  </script>
-</body>
+    <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleMenu() {
+        var x = document.getElementById("hidden-nav-bar");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      // Close hidden navigation on any click: https://www.youtube.com/watch?v=DxWqBRqAGLo
+      window.addEventListener("click", function(event){
+        var bar = document.getElementById("hidden-nav-bar");
+        var toggle = document.getElementById("toggle");
+        var toggle_icon = document.getElementById("toggle-icon");
+        if (event.target != toggle && event.target != toggle_icon) {
+          bar.className = bar.className.replace(" w3-show", "");
+        }
+      });
+    </script>
+
+    <!-- smooth scroll for cross platform - modified function from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on("click", function(event) {
+          var hash = this.hash;
+          // Make sure this.hash has a value before overriding default behavior
+          // Using jQuery's animate() method to add smooth page scroll
+          if (hash != "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // stop ongoing scrolling
+            $("html, body").stop();
+            var scroll_time = 600
+            if (hash == "#top") {
+              $("html, body").animate({
+                scrollTop: 0
+              }, scroll_time);
+            } else {
+              $("html, body").animate({
+                scrollTop: $(hash).offset().top - 45 // navigation bar height
+              }, scroll_time);
+            }
+          }
+        });
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109579126-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-109579126-1');
+    </script>
+
+  </body>
+
 </html>
