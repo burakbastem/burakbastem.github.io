@@ -405,8 +405,12 @@
                 scrollTop: 0
               }, scroll_time);
             } else {
+              var nav_bar_height = 45
+              if ($("#hidden-nav-bar").attr("class").indexOf(" w3-show") != -1) {
+                nav_bar_height = 83
+              }
               $("html, body").animate({
-                scrollTop: $(hash).offset().top - 45 // navigation bar height
+                scrollTop: $(hash).offset().top - nav_bar_height
               }, scroll_time);
             }
           }
