@@ -6,6 +6,7 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summ
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:target::before{content: ""; display: block; height: 45px; /* fixed header height*/ margin-top: -45px; /* negative fixed header height */} /* best solution ever from https://stackoverflow.com/questions/4086107/fixed-page-header-overlaps-in-page-anchors*/
 a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
